@@ -3,6 +3,5 @@ numpy
 pandas
 Pillow
 scikit-learn
-opencv-python
 fpdf
 opencv-python-headless
