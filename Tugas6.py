@@ -71,7 +71,7 @@ def generate_palette_pdf(colors, hex_colors, image):
 
 
     os.remove(image_path)
-    return bytes(pdf.output(dest='S'))
+    return pdf.output(dest='S').encode('latin1')
 
 uploaded_file = st.file_uploader("Upload gambar", type=["jpg", "jpeg", "png"])
 if uploaded_file:
